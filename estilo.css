@@ -1,0 +1,201 @@
+/*
+*
+@author Airton Felix Ferreira
+@version 0.1
+
+====================== layout =======================*/
+
+html, body, .capa{
+	height: 100%;
+}
+
+body{
+	
+	background: url('imagens/capa.png'), 
+	            url('iagens/ruido.png'), 
+	            linear-gradient(50deg, #ff4169, #7c26f8);
+	background-attachment: fixed;
+	font-family: inherit, Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+
+
+/*---------------- Barra de Navegação -----------------*/
+.img-logo{
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.nav-transparente{
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 15px 10px;
+}
+
+.navbar-default .navbar-nav>li>a, footer .list-group a{
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover, footer .list-group a:hover{
+	color: #9bf0e1;
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+  }
+/*---------------- Imagem da capa -----------------*/
+
+.capa{
+	display: table;
+	width: 100%;
+}
+
+.texto-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*---------------- Botões -----------------*/
+.capa .texto-capa .btn-custom{
+	color: white;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	margin: 0px 15px;
+	transition: background 0.4s, color 0.4s;
+
+}
+
+.capa .texto-capa .btn-roxo{
+	background: #7c25f8;
+}
+
+.capa .texto-capa .btn-roxo:hover{
+	background: #6207e3;
+	color: white;
+}
+
+.capa .texto-capa .btn-branco{
+	border: 2px solid white;
+}
+
+.capa .texto-capa .btn-branco:hover{
+	background-color: white;
+	color: black;
+}
+
+/*---------------- Serviços -----------------*/
+
+#serviços{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.albuns{
+	padding: 10px 0px 10px 0px;
+}
+
+/*---------------- Recursos -----------------*/
+
+#recursos{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.rotacionar{
+	/*Rotacionar o iphone*/
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg); /* IE 9 */
+	-ms-transform: rotate(30deg); /* Chrome, Safari, Opera */
+	padding-left: 80px; /* empurrar o iphone pra não cobrir as letras*/
+	
+}
+
+/*---------------- Rodapé -----------------*/
+
+footer{
+	background: #000;
+	padding: 140px 0px 30px 0px;
+	position: relative;
+}
+
+.item-rede-social{
+	float: right;
+	padding: 8px;
+}
+
+.espaçamentos{
+	font-size: 12px;
+	padding: 12px;
+	color: #919496;
+}
+
+.espaçamentos:hover{
+	color: #9bf0e1;
+}
+
+
+
+
+/*-------------------- Tipografia ---------------------*/
+
+
+.capa .texto-capa h1{
+	font-family: Circular,Helvetica,Arial,sans-serif;
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+
+}
+
+.row .col-md-6 h2, .row .col-md-4 h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+.row .col-md-6 h3, .row .col-md-4 h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#serviços h3, #serviços h2{
+	color: #7c25f8;
+}
+
+#recursos h3, #recursos h2, #recursos p{
+	color: #9bf0e1;
+}
+
+.row .col-md-2 h4{
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+
+}
