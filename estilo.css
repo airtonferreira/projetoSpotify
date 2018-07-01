@@ -7,6 +7,7 @@
 
 html, body, .capa{
 	height: 100%;
+	/*overflow: auto;*/
 }
 
 body{
@@ -21,6 +22,14 @@ body{
 
 
 /*---------------- Barra de Navegação -----------------*/
+
+.topo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	float: right;
+}
+
 .img-logo{
 	height: 40px;
 	width: 132px;
@@ -55,12 +64,6 @@ nav.nav-transparente{
 	color: #9bf0e1;
 }
 
-.sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1030;
-  }
 /*---------------- Imagem da capa -----------------*/
 
 .capa{
@@ -81,10 +84,9 @@ nav.nav-transparente{
 	-webkit-border-radius: 500px;
 	-moz-border-radius: 500px;
 	border-radius: 500px;
-	padding: 10px 35px;
 	text-transform: uppercase;
-	margin: 0px 15px;
 	transition: background 0.4s, color 0.4s;
+	padding: 10px 35px;
 
 }
 
@@ -166,12 +168,12 @@ footer{
 
 .capa .texto-capa h1{
 	font-family: Circular,Helvetica,Arial,sans-serif;
-	font-size: 100px;
 	font-weight: 900;
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
 
 }
+
 
 .row .col-md-6 h2, .row .col-md-4 h2{
 	font-size: 50px;
@@ -198,4 +200,44 @@ footer{
 	font-size: 12px;
 	text-transform: uppercase;
 
+}
+
+/* =========== Media Queries ============*/
+
+/* Small */
+@media screen and (max-width: 540px){
+	.capa .texto-capa h1{
+		font-size: 50px;
+		
+	}
+
+	.capa .texto-capa .btn-custom{
+		margin: 0px 15px;
+
+	}
+}
+
+
+/* Medium */
+@media screen and (min-width: 768px){
+	.capa .texto-capa h1{
+		font-size: 70px;
+		
+	}
+}
+
+/* Large */
+@media screen and (min-width: 960px){
+	.capa .texto-capa h1{
+		font-size: 80px;
+		
+	}
+}
+
+/* Extra Large */
+@media screen and (min-width: 1200px){
+	.capa .texto-capa h1{
+		font-size: 100px;
+		
+	}
 }
